@@ -1,0 +1,65 @@
+/* Validation styles */
+.validation-error {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    min-height: 1.2rem;
+    line-height: 1.2;
+}
+
+.checkmark {
+    display: inline-block;
+    color: #28a745;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0 5px;
+    color: #666;
+}
+
+.password-toggle:hover {
+    opacity: 0.8;
+}
+
+ .form-control:valid {
+    border-color: #090909 !important;
+}
+        .form-control:invalid {
+    border-color: #0a0909 !important;
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 5px;
+    height: 5px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.password-strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .password-toggle {
+        right: 15px;
+    }
+}
